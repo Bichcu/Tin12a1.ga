@@ -1,0 +1,414 @@
+#tnb-search-suggestions {
+  display: none;
+  position: fixed;
+  z-index: 200;
+  font-family: "Source Sans Pro", sans-serif;
+  background-color: #fff;
+  color: #000;
+  width: 300px;
+  top: 49px;
+  left: 507px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12) !important;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+#tnb-search-suggestions .search_item {
+  background-color: #fff;
+  color: #777;
+  text-decoration: none;
+  text-align: left;
+  display: block;
+  padding: 10px 26px;
+  width: 100%;
+  opacity: 0.95;
+  border: none;
+  cursor: pointer;
+}
+#tnb-search-suggestions .search_item:hover {
+  color: #000;
+  opacity: 1;
+}
+#tnb-search-suggestions .span_search {
+  background-color: #ffecee;
+}
+#tnb-search-suggestions .search_active {
+  background-color: #ffecee !important;
+  color: #000 !important;
+}
+#tnb-search-suggestions .search_active .span_search {
+  background-color: #ffccd1;
+}
+@media (max-width: 954px) {
+  #tnb-search-suggestions {
+    left: 378px;
+  }
+}
+@media (max-width: 828px) {
+  #tnb-search-suggestions {
+    left: 10px;
+    width: 91%;
+  }
+}
+
+#tnb-profile-dropdown {
+  display: block;
+  position: fixed;
+  z-index: 99999;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 600;
+  width: 350px;
+  min-width: 350px;
+  top: 56px;
+  right: 0;
+  text-align: left;
+  max-width: 100% !important;
+  max-height: 100vh;
+  overflow-y: auto;
+}
+@media (max-width: 500px) {
+  #tnb-profile-dropdown {
+    right: auto !important;
+    left: 0 !important;
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+    border-radius: 0px;
+  }
+}
+#tnb-profile-dropdown #tnb-profile-dropdown-bottom-spacer {
+  outline: none;
+  cursor: default;
+  opacity: 0;
+  display: block;
+  width: 100%;
+  height: 56px;
+}
+#tnb-profile-dropdown > .inner-wrapper {
+  background-color: #fff;
+  color: #212121;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e3e6e8;
+  border-radius: 0 0 4px 4px;
+}
+#tnb-profile-dropdown .access-badge {
+  min-width: 80px;
+  padding: 10px;
+  padding-top: 8px;
+  margin: 0px;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 500;
+  height: 36px;
+}
+#tnb-profile-dropdown .access-badge-green {
+  background-color: #e7f3ef;
+  color: #04aa6d;
+  border: 1px solid #d1e7e0;
+  cursor: default;
+}
+#tnb-profile-dropdown .access-badge-purple {
+  background-color: #f3efff;
+  color: #9763f6;
+  border: 1px solid #e7e0ff;
+  cursor: pointer;
+}
+#tnb-profile-dropdown .user-header {
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+#tnb-profile-dropdown .user-header .user-info .user-name {
+  font-size: 16px;
+  font-weight: 600;
+  color: #212121;
+  margin-bottom: 4px;
+}
+#tnb-profile-dropdown .user-header .user-info .open-profile {
+  margin-left: -15px;
+  margin-top: -15px;
+  color: #212121;
+  font-size: 14px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+#tnb-profile-dropdown .user-header .user-info .open-profile:hover {
+  text-decoration: underline;
+  background: none;
+}
+#tnb-profile-dropdown .user-header .user-info .open-profile i {
+  color: #282a35;
+  font-size: 12px;
+}
+#tnb-profile-dropdown .user-header .user-info .open-profile svg path {
+  stroke: #212121;
+}
+#tnb-profile-dropdown .current-progress {
+  margin-top: -30px;
+  padding: 16px;
+}
+#tnb-profile-dropdown .current-progress .course-info {
+  margin-bottom: 0px;
+  padding: 12px;
+  border: 1px solid #e3e6e8;
+  border-radius: 8px;
+  position: relative;
+  background-color: #fff;
+}
+#tnb-profile-dropdown .current-progress .course-info .course-type {
+  color: #212121;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+#tnb-profile-dropdown .current-progress .course-info .progress-wrapper {
+  margin-bottom: 16px;
+}
+#tnb-profile-dropdown .current-progress .course-info .progress-wrapper .progress-label {
+  color: rgba(33, 33, 33, 0.6);
+  font-size: 12px;
+  font-weight: normal;
+  margin-bottom: 8px;
+}
+#tnb-profile-dropdown .current-progress .course-info .progress-wrapper .progress-bar {
+  background-color: #e7e9eb;
+  border-radius: 100px;
+  height: 6px;
+  overflow: hidden;
+}
+#tnb-profile-dropdown .current-progress .course-info .progress-wrapper .progress-bar .progress {
+  background-color: #04aa6d;
+  height: 100%;
+}
+#tnb-profile-dropdown .current-progress .course-info .last-activity .label {
+  color: rgba(33, 33, 33, 0.6);
+  font-size: 12px;
+  font-weight: normal;
+  margin-bottom: 4px;
+}
+#tnb-profile-dropdown .current-progress .course-info .last-activity .label-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 4px;
+}
+#tnb-profile-dropdown .current-progress .course-info .last-activity .label-wrapper .label {
+  color: rgba(33, 33, 33, 0.6);
+  font-size: 12px;
+  font-weight: normal;
+}
+#tnb-profile-dropdown .current-progress .course-info .last-activity .label-wrapper .resume-link {
+  color: #04aa6d;
+  font-size: 12px;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+  margin-left: auto;
+}
+#tnb-profile-dropdown .current-progress .course-info .last-activity .label-wrapper .resume-link:hover {
+  text-decoration: underline;
+  background: none;
+}
+#tnb-profile-dropdown .current-progress .course-info .last-activity .lesson-name {
+  color: #212121;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.4;
+}
+#tnb-profile-dropdown .current-progress .course-info > .resume-link {
+  display: none;
+}
+#tnb-profile-dropdown a.open-profile {
+  display: flex;
+  align-items: center;
+  padding: 12px 16px;
+  color: #212121;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600 !important;
+}
+#tnb-profile-dropdown .-nav-menu a {
+  display: flex;
+  align-items: center;
+  padding: 12px 16px;
+  color: #212121;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600 !important;
+  gap: 15px;
+}
+#tnb-profile-dropdown .-nav-menu a i {
+  margin: 0 3px;
+  width: 16px;
+  font-size: 16px;
+  color: #666;
+}
+#tnb-profile-dropdown .-nav-menu a i.fa-id-card-o {
+  font-size: 15px;
+}
+#tnb-profile-dropdown .-nav-menu a svg {
+  color: #212121;
+}
+.darkpagetheme #tnb-profile-dropdown .-nav-menu a svg {
+  color: #fff;
+}
+#tnb-profile-dropdown .-nav-menu a:hover {
+  background-color: #f3f4f6;
+}
+#tnb-profile-dropdown .-nav-menu a.logout {
+  color: #e51400;
+}
+#tnb-profile-dropdown .-nav-menu a.logout i {
+  color: #e51400;
+}
+#tnb-profile-dropdown .-nav-menu a.logout svg {
+  color: #e51400;
+}
+#tnb-profile-dropdown .-nav-menu .profile-menu-divider {
+  height: 1px;
+  background-color: #e3e6e8;
+  margin: 4px 0;
+}
+#tnb-profile-dropdown .tnb-profile-chevron-btn {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 14px;
+  height: 14px;
+  width: 14px;
+  min-height: 14px;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  background-color: #f1f1f1;
+  transition: background-color 0.2s;
+  padding: 0;
+  cursor: pointer;
+  z-index: 9999;
+}
+#tnb-profile-dropdown .tnb-profile-chevron-btn .profile-chevron {
+  transition: transform 0.3s ease;
+  display: block;
+  border-radius: 50%;
+  transform: rotate(0deg);
+  background-color: #f1f1f1;
+}
+#tnb-profile-dropdown .tnb-profile-chevron-btn.active .profile-chevron {
+  transform: rotate(180deg);
+  background-color: #f1f1f1;
+  border-radius: 50%;
+}
+#tnb-profile-dropdown .tnb-profile-chevron-btn:hover {
+  background-color: #f1f1f1;
+  border-radius: 50%;
+}
+#tnb-profile-dropdown .tnb-profile-chevron-btn:focus {
+  outline: none !important;
+}
+#tnb-profile-dropdown .tnb-profile-chevron-btn:focus-visible {
+  background-color: #e6e6e6 !important;
+}
+.darkpagetheme #tnb-profile-dropdown .tnb-profile-chevron-btn {
+  background-color: #ffffff !important;
+}
+
+.darkpagetheme #tnb-profile-dropdown > .inner-wrapper {
+  background-color: #1d2a35;
+  border-color: #38444d;
+  color: #fff;
+}
+.darkpagetheme #tnb-profile-dropdown .access-badge-green {
+  background-color: rgba(4, 170, 109, 0.1);
+  border-color: rgba(4, 170, 109, 0.2);
+  color: #04aa6d;
+}
+.darkpagetheme #tnb-profile-dropdown .access-badge-purple {
+  background-color: rgba(151, 99, 246, 0.1);
+  border-color: rgba(151, 99, 246, 0.2);
+  color: #9763f6;
+}
+.darkpagetheme #tnb-profile-dropdown .user-header {
+  border-color: #38444d;
+}
+.darkpagetheme #tnb-profile-dropdown .user-header .user-info .user-name {
+  color: #fff;
+}
+.darkpagetheme #tnb-profile-dropdown .user-header .user-info .open-profile {
+  color: #fff;
+}
+.darkpagetheme #tnb-profile-dropdown .user-header .user-info .open-profile svg path {
+  stroke: #fff;
+}
+.darkpagetheme #tnb-profile-dropdown .current-progress {
+  border-color: #38444d;
+}
+.darkpagetheme #tnb-profile-dropdown .current-progress .course-info {
+  background-color: #1d2a35;
+  border-color: #38444d;
+}
+.darkpagetheme #tnb-profile-dropdown .current-progress .course-info .course-type {
+  color: #ffffff;
+}
+.darkpagetheme #tnb-profile-dropdown .current-progress .course-info .course-name {
+  color: #fff;
+}
+.darkpagetheme #tnb-profile-dropdown .current-progress .course-info .progress-wrapper .progress-label {
+  color: #ffffff;
+}
+.darkpagetheme #tnb-profile-dropdown .current-progress .course-info .progress-wrapper .progress-bar {
+  background-color: #ffffff;
+}
+.darkpagetheme #tnb-profile-dropdown .current-progress .course-info .last-activity .label {
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: normal;
+  margin-bottom: 4px;
+}
+.darkpagetheme #tnb-profile-dropdown .current-progress .course-info .last-activity .label-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 4px;
+}
+.darkpagetheme #tnb-profile-dropdown .current-progress .course-info .last-activity .label-wrapper .label {
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: normal;
+}
+.darkpagetheme #tnb-profile-dropdown .current-progress .course-info .last-activity .label-wrapper svg path {
+  stroke: #ffffff;
+}
+.darkpagetheme #tnb-profile-dropdown .current-progress .course-info .last-activity .label-wrapper .resume-link {
+  color: #ffffff;
+}
+.darkpagetheme #tnb-profile-dropdown .current-progress .course-info .last-activity .lesson-name {
+  color: #fff;
+}
+.darkpagetheme #tnb-profile-dropdown a {
+  color: #fff;
+}
+.darkpagetheme #tnb-profile-dropdown a svg {
+  color: #fff;
+}
+.darkpagetheme #tnb-profile-dropdown a i {
+  color: #9eb2bd;
+}
+.darkpagetheme #tnb-profile-dropdown a:hover {
+  background-color: #38444d;
+}
+.darkpagetheme #tnb-profile-dropdown a.logout {
+  color: #e51400;
+}
+.darkpagetheme #tnb-profile-dropdown a.logout i {
+  color: #e51400;
+}
+.darkpagetheme #tnb-profile-dropdown .profile-menu-divider {
+  background-color: #38444d;
+}
